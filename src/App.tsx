@@ -1,5 +1,11 @@
-export function App() {
-  return <h1>Hello World</h1>;
-}
+import { AttendeeList } from "./components/attendee-lits";
+import { Header } from "./components/header";
 
-export default App;
+export function App() {
+  return (
+    <div className="max-w-[1216px] mx-auto py-5">
+      <Header />
+      <AttendeeList />
+    </div>
+  );
+}
