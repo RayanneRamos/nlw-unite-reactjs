@@ -5,11 +5,7 @@ interface IconButtonProps extends ComponentProps<"button"> {
   transparent?: boolean;
 }
 
-export function IconButton({
-  transparent,
-  disabled,
-  ...props
-}: IconButtonProps) {
+export function IconButton({ transparent, ...props }: IconButtonProps) {
   return (
     <button
       {...props}
@@ -21,7 +17,7 @@ export function IconButton({
       className={twMerge(
         "border border-white/10 rounded-md p-1.5",
         transparent ? "bg-black/10" : "bg-white/10",
-        disabled ? "opacity-50" : null
+        props.disabled ? "opacity-50" : null
       )}
     />
   );
