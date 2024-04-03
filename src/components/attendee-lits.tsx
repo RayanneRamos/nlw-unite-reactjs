@@ -10,6 +10,7 @@ import { IconButton } from "./icon-button";
 import { Table } from "./table/table";
 import { TableHeader } from "./table/table-header";
 import { TableCell } from "./table/table-cell";
+import { TableRow } from "./table/table-row";
 
 export function AttendeeList() {
   return (
@@ -26,7 +27,7 @@ export function AttendeeList() {
       </div>
       <Table>
         <thead>
-          <tr className="border-b border-white/10">
+          <TableRow className="border-b border-white/10">
             <TableHeader style={{ width: 48 }}>
               <input
                 type="checkbox"
@@ -38,12 +39,12 @@ export function AttendeeList() {
             <TableHeader>Data de inscrição</TableHeader>
             <TableHeader>Data do check-in</TableHeader>
             <TableHeader style={{ width: 64 }}></TableHeader>
-          </tr>
+          </TableRow>
         </thead>
         <tbody>
           {Array.from({ length: 8 }).map((_, index) => {
             return (
-              <tr className="border-b border-white/10" key={index}>
+              <TableRow className="border-b border-white/10" key={index}>
                 <TableCell>
                   <input
                     type="checkbox"
@@ -66,12 +67,12 @@ export function AttendeeList() {
                     <MoreHorizontal className="size-4" />
                   </IconButton>
                 </TableCell>
-              </tr>
+              </TableRow>
             );
           })}
         </tbody>
         <tfoot>
-          <tr>
+          <TableRow>
             <TableCell className="py-3 px-4 text-sm text-zinc-300" colSpan={3}>
               Mostrando 10 de 228 itens
             </TableCell>
@@ -94,7 +95,7 @@ export function AttendeeList() {
                 </div>
               </div>
             </TableCell>
-          </tr>
+          </TableRow>
         </tfoot>
       </Table>
     </div>
