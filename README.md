@@ -16,7 +16,7 @@
 
 [NLWUnite](https://nlw-unite-reactjs.vercel.app/) Projeto desenvolvido durante a NLW Unite que aconteceu do dia 01/04/2024 à 05/04/2024 que foi organizado pela [Rocketseat](www.rocketseat.com.br), o projeto consiste em criar uma página com uma tabela mostrando todas as pessoas cadastradas para tal evento, desenvolvemos padrões de url state, paginação, usamos tailwindcss para a estilização e o vitejs para criar um projeto em Reactjs.
 
-## 🧪 Technologies
+## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
